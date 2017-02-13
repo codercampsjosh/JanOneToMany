@@ -1,0 +1,19 @@
+<h2>Home</h2>
+<div>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="cat in controller.categories">
+                <td>
+                    <a ui-sref="about({id: cat.id})">
+                        {{cat.name}}
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

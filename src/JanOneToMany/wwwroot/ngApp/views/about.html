@@ -1,0 +1,15 @@
+<h2>All movies in Category {{controller.category.name}}</h2>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <td>Title</td>
+            <td>Director</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="movie in controller.category.movies">
+            <td>{{movie.title}}</td>
+            <td>{{movie.director}}</td>
+        </tr>
+    </tbody>
+</table>
